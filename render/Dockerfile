@@ -34,7 +34,7 @@ WORKDIR /var/www/html
 COPY src/ /var/www/html/
 
 # Copiar .env.render
-COPY Render/.env.render /var/www/html/.env
+COPY render/.env.render /var/www/html/.env
 
 # Ejecutar composer install sin dependencias de desarrollo
 RUN composer install --optimize-autoloader --no-dev
